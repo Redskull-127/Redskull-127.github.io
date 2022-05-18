@@ -1,0 +1,94 @@
+.Head {
+  margin: 2vh;
+  padding: 1.2vh;
+}
+
+.cute{
+    font-size: 30;
+    color: antiquewhite;
+    margin: 10px;
+}
+
+.title {
+  font-size: 30;
+  color: antiquewhite;
+  margin: 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.title:first-of-type {
+  animation: showup 7s infinite;
+}
+.title:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+.title:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+    color: transparent;
+  }
+  20% {
+    margin-left: -600px;
+    color: transparent;
+  }
+  35% {
+    margin-left: 0px;
+    color: antiquewhite;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+.Bitmoji {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  height: 35vh;
+}

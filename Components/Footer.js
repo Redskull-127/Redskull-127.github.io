@@ -17,7 +17,6 @@ class Footer extends Component {
         return (
           <div className={styles.Footer} >
               <h1>Connect With Me...</h1>
-              <img loading="lazy" src="/new/images/bitmoji.png" className={styles.bit}/>
               <div className={styles.media}>
                   <img loading="lazy" src="/new/images/gmail.gif" onClick={this.gmail}/>
                   <img loading="lazy" src="/new/images/instagram.gif" onClick={this.instagram}/>

@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <>
         <center>
-          <div className={styles.Head} data-aos="fade-up">
+          <div className={styles.Head}>
             <img src="/new/images/bitmoji.png" className={styles.Bitmoji} />
             <div className={styles.content}>
               <h1 className={styles.cute}>Hey,</h1>

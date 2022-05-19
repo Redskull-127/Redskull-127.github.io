@@ -1,12 +1,14 @@
 import styles from "../styles/Header.module.css";
 import React, { Component } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 class Header extends Component {
   render() {
     return (
       <>
         <center>
-          <div className={styles.Head}>
+          <div className={styles.Head} data-aos="fade-up">
             <img src="/new/images/bitmoji.png" className={styles.Bitmoji} />
             <div className={styles.content}>
               <h1 className={styles.cute}>Hey,</h1>

@@ -1,13 +1,16 @@
 import styles from "../styles/About.module.css";
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 class About extends Component {
   render() {
     return (
       <center>
         <main className={styles.About}>
-          <h1 className={styles.title}>About Me!</h1>
-          <div className={styles.content}>
+          <h1 className={styles.title} data-aos="fade-up">About Me!</h1>
+          <div className={styles.content} data-aos="fade-up">
             <p>
               Hey, Myself Meer Tarbani and Currently enrolled in Computer
               Application Field (BCA) at{" "}
@@ -20,8 +23,9 @@ class About extends Component {
               Also I`m lead of <a href="rdeclub.live">Palm Tree Club.</a>
             </p>
           </div>
-          <h1 className={styles.title}>Thing`s I Love!</h1>
-          <div className={styles.tech}>
+          <div>
+          <h1 className={styles.title} data-aos="fade-up">Thing`s I Love!</h1>
+          <div className={styles.tech} data-aos="fade-up">
             <img loading="lazy" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-html-web-development-flaticons-lineal-color-flat-icons.png"/>
             <img loading="lazy" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-css-no-code-flaticons-flat-flat-icons.png" />
             <img loading="lazy" src="https://img.icons8.com/external-others-iconmarket/64/000000/external-js-file-types-others-iconmarket-4.png" />
@@ -31,10 +35,10 @@ class About extends Component {
             <img loading="lazy" src="https://img.icons8.com/office/40/000000/react.png" />
             <img loading="lazy" src="https://img.icons8.com/fluency/48/000000/python.png"/>
           </div>
+          </div>
         </main>
       </center>
     );
   }
 }
-
 export default About;

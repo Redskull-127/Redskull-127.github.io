@@ -1,0 +1,32 @@
+.Position{
+    background-color: antiquewhite;
+    width: 80%;
+    height: fit-content;
+    border-radius: 7px;
+    transition: 0.54s;
+    padding: 10px;
+    margin: 50px;
+}
+
+.Position h1{
+    display: inline-block;
+    color: black;
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+
+
+.title{
+    padding: 5px;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 30px;
+    color: antiquewhite;
+    transition: 0.54s;
+}
+
+.title:hover{
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 17px;
+}

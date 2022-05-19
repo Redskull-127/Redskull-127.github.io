@@ -1,0 +1,26 @@
+.Footer{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+    margin-bottom:30px;
+    padding: 20px;
+    background-color: rgba(250, 235, 215, 0.151);
+}
+
+.Footer h1{
+    color: antiquewhite;
+
+}
+
+.bit{
+    height: 100px;
+    position: absolute;
+    left: 47%;
+    bottom: 10px;
+}
+
+.media img{
+    height: 50px;
+}

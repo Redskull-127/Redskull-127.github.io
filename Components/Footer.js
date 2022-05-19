@@ -15,7 +15,7 @@ class Footer extends Component {
     }
     render() {
         return (
-          <div className={styles.Footer} data-aos="fade-down">
+          <div className={styles.Footer} >
               <h1>Connect With Me...</h1>
               <img loading="lazy" src="/new/images/bitmoji.png" className={styles.bit}/>
               <div className={styles.media}>

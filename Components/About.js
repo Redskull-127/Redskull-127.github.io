@@ -2,6 +2,8 @@ import styles from "../styles/About.module.css";
 import React, { Component, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ReactDOM from 'react-dom';
+import Draggable, {DraggableCore} from 'react-draggable';
 
 
 class About extends Component {

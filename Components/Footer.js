@@ -18,9 +18,9 @@ class Footer extends Component {
           <div className={styles.Footer} >
               <h1>Connect With Me...</h1>
               <div className={styles.media}>
-                  <img loading="lazy" src="/redskull-127.github.io/images/gmail.gif" onClick={this.gmail}/>
-                  <img loading="lazy" src="/redskull-127.github.io/images/instagram.gif" onClick={this.instagram}/>
-                  <img loading="lazy" src="/redskull-127.github.io/images/linkedin.gif" onClick={this.linkedin}/>
+                  <img loading="lazy" src="/images/gmail.gif" onClick={this.gmail}/>
+                  <img loading="lazy" src="/images/instagram.gif" onClick={this.instagram}/>
+                  <img loading="lazy" src="/images/linkedin.gif" onClick={this.linkedin}/>
               </div>
           </div>
     );

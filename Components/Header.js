@@ -2,8 +2,6 @@ import styles from "../styles/Header.module.css";
 import React, { Component } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
-
 class Header extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.onScroll);

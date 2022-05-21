@@ -16,14 +16,15 @@ export default function Home() {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <><div className={styles.container}>
+    <>
+    <div className={styles.container}>
       <Head>
         <title>Meer Tarbani</title>
         <meta name="description" content="Portfolio Website" />
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={styles.main} >
         <Header />
         <About />
         <Position />

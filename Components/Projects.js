@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 class Projects extends Component {
     redskull(){
-        window.open('https://redskull.me');
+        window.open('https://redskull.me/projects');
     }
   render() {
     return (

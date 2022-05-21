@@ -9,7 +9,7 @@ class Header extends Component {
       <>
         <center>
           <div className={styles.Head}>
-            <img src="/images/bitmoji.png" className={styles.Bitmoji} />
+            <img src="/images/bitmojidance.gif" className={styles.Bitmoji} />
             <div className={styles.content}>
               <h1 className={styles.cute}>Hey,</h1>
               <h1 className={styles.title}><span>Nice To Meet You!</span></h1>

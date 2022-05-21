@@ -9,6 +9,17 @@
     margin: 10px;
 }
 
+.continue{
+  display: inline-block;
+  border-radius: 7px;
+  color: color;
+  margin-top: 90px;
+  padding: 5px;
+  background-color: antiquewhite;
+  font-size: 18px;
+  transition: 0.54s;
+}
+
 .title {
   font-size: 30;
   color: antiquewhite;

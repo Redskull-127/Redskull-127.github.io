@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Nav from "../Components/Nav";
 import Header from "../Components/Header";
 import About from "../Components/About";
 import Position from "../Components/Position";
@@ -13,10 +11,14 @@ import React, { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
+    // window.addEventListener("load", function () {
+    //   const loader = document.getElementById("Timgle");
+    //   loader.style.display = "none";
+    // })
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <>
+    <React.Fragment>
     <div className={styles.container}>
       <Head>
         <title>Meer Tarbani</title>
@@ -30,6 +32,7 @@ export default function Home() {
         <Position />
         <Projects />
       </main>
-    </div><Footer /></>
+    </div><Footer />
+    </React.Fragment>
   );
 }

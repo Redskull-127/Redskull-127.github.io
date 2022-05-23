@@ -4,8 +4,8 @@
     height: fit-content;
     border-radius: 7px;
     transition: 0.54s;
+    margin-top: 40px;
     padding: 10px;
-    margin: 50px;
 }
 
 .Position h1{
@@ -30,3 +30,17 @@
     color: black;
     border-radius: 17px;
 }
+
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 45px;
+    }
+    .Position{
+        width: 95%;
+        border-radius: 14px;
+        margin-bottom: 350px;
+    }
+    .Position p{
+        font-size: 30px;
+    }
+  }

@@ -38,3 +38,20 @@
     color: black;
     border-radius: 17px;
 }
+
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 45px;
+    }
+    .Projects{
+        width: 95%;
+        border-radius: 14px;
+        margin-bottom: 250px;
+    }
+    .Projects p{
+        font-size: 40px;
+    }
+    .Projects button{
+        font-size: 25px;
+    }
+  }

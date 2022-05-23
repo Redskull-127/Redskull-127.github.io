@@ -13,7 +13,7 @@ class Projects extends Component {
           <h1 className={styles.title} data-aos="fade-up">Projects</h1>
           <div className={styles.Projects} data-aos="fade-up">
               <p>Get My All Projects{" "}</p>
-              <button type="button" class="btn btn-warning" onClick={this.redskull}>Here</button>
+              <button type="button" className="btn btn-warning" onClick={this.redskull}>Here</button>
           </div>
       </center>
     );

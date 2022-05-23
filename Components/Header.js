@@ -38,6 +38,7 @@ class Header extends Component {
                 src="/images/bitmojidance.gif"
                 className={styles.Bitmoji}
                 loading="lazy"
+                data-bs-toggle="tooltip" data-bs-placement="top" title="Drag This Emote!"
               />
               </div>
             </Draggable>

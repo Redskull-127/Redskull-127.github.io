@@ -34,12 +34,14 @@ class Header extends Component {
               onStop={this.handleStop}
             >
               <div className="handle">
-              <img
-                src="/images/bitmojidance.gif"
-                className={styles.Bitmoji}
-                loading="lazy"
-                data-bs-toggle="tooltip" data-bs-placement="top" title="Drag This Emote!"
-              />
+                <img
+                  src="/images/bitmojidance.gif"
+                  className={styles.Bitmoji}
+                  loading="lazy"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Drag This Emote!"
+                />
               </div>
             </Draggable>
             <div className={styles.content}>

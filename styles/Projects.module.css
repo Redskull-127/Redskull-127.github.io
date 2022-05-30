@@ -24,6 +24,7 @@
 }
 
 .projectsdiv{
+    width: 80%;
     display: flex;
     margin: 10em 5em 10em 5em;
 }
@@ -82,5 +83,17 @@
     }
     .Projects button{
         font-size: 25px;
+    }
+    .projectsdiv{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10em;
+    }
+    .card{
+        background-color: rgba(250, 235, 215, 0.151);
+        border-radius: 7px;
+        width: 18rem;
+        margin-top: 50px;
     }
   }

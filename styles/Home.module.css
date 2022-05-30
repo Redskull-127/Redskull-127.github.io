@@ -108,6 +108,12 @@
   margin-left: 0.5rem;
 }
 
+.preloader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 
 @media (max-width: 600px) {
   .grid {

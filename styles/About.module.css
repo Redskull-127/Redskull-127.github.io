@@ -5,6 +5,15 @@
     align-items: center;
 }
 
+.preloader {
+    background-color: antiquewhite;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50deg,-50deg);
+}
+
 .title{
     padding: 5px;
     width: fit-content;

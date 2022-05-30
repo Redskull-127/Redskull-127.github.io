@@ -11,9 +11,13 @@ import "aos/dist/aos.css";
 import React, { useEffect, useState, Component } from "react";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+  
+
+  
   return (
     <React.Fragment>
       <div className={styles.container}>
@@ -22,14 +26,29 @@ export default function Home() {
           <meta name="description" content="Portfolio Website" />
           <link rel="icon" href="/images/favicon.ico" />
         </Head>
-        <main className={styles.main}>
+        <main className={styles.main} id="mains" >
           <Header />
           <About />
-          <img src="images/emote2.png" loading="lazy" data-aos="fade-down" className={emotes.emote}/>
+          <img
+            src="images/emote2.png"
+            loading="lazy"
+            data-aos="fade-down"
+            className={emotes.emote}
+          />
           <Position />
-          <img src="images/emote3.png" loading="lazy" data-aos="fade-down" className={emotes.emote}/>
+          <img
+            src="images/emote3.png"
+            loading="lazy"
+            data-aos="fade-down"
+            className={emotes.emote}
+          />
           <Projects />
-          <img src="images/emote4.png" loading="lazy" data-aos="fade-down" className={emotes.emote}/>
+          <img
+            src="images/emote4.png"
+            loading="lazy"
+            data-aos="fade-down"
+            className={emotes.emote}
+          />
         </main>
       </div>
       <Footer />

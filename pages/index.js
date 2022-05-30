@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import emotes from "../styles/Emote.module.css";
 import Header from "../Components/Header";
 import About from "../Components/About";
 import Position from "../Components/Position";
@@ -24,8 +25,11 @@ export default function Home() {
         <main className={styles.main}>
           <Header />
           <About />
+          <img src="images/emote2.png" loading="lazy" data-aos="fade-down" className={emotes.emote}/>
           <Position />
+          <img src="images/emote3.png" loading="lazy" data-aos="fade-down" className={emotes.emote}/>
           <Projects />
+          <img src="images/emote4.png" loading="lazy" data-aos="fade-down" className={emotes.emote}/>
         </main>
       </div>
       <Footer />

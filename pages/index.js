@@ -9,6 +9,9 @@ import Footer from "../Components/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect, useState, Component } from "react";
+import { CustomCursor } from "react-svg-cursor";
+
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -20,6 +23,15 @@ export default function Home() {
   
   return (
     <React.Fragment>
+      <CustomCursor
+      component={"images/cursor2.png"}
+      isDisabled={false}
+      jsx={true}
+      width={50}
+      height={50}
+      zIndex={420}
+      transform="translate(-32%, -10%) rotateZ(0deg)"
+    />
       <div className={styles.container}>
         <Head>
           <title>Meer Tarbani</title>

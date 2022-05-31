@@ -14,24 +14,28 @@ import { CustomCursor } from "react-svg-cursor";
 
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
+  const [device, setDevice] = useState(false);
   useEffect(() => {
     Aos.init({ duration: 2000 });
+    var userAgent = navigator.userAgent.toLowerCase();
+    var Android = userAgent.indexOf("android") > -1;
+    if(Android){
+      setDevice(true)
+    }
   }, []);
   
 
   
   return (
     <React.Fragment>
-      <CustomCursor
+      <><CustomCursor
       component={"images/cursor2.png"}
-      isDisabled={false}
-      jsx={true}
+      isDisabled={device}
       width={50}
       height={50}
       zIndex={420}
       transform="translate(-32%, -10%) rotateZ(0deg)"
-    />
+    /></>
       <div className={styles.container}>
         <Head>
           <title>Meer Tarbani</title>

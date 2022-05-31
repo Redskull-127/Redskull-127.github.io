@@ -4,23 +4,11 @@ import React, { Component, useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ReactDOM from "react-dom";
-import Draggable, { DraggableCore } from "react-draggable";
 
 class About extends Component {
-  componentDidMount() {
-    window.addEventListener("load", () => {
-      console.log("ok");
-      const preloader = document.getElementById("preloader")
-      preloader.style.display = "none"
-    });
-  }
   render() {
     return (
-        <><div className={styles.preloader} id="preloader">
-        <div className="spinner-border text-primary" role="status">
-          <span className="visually-hidden">Loading...</span>
-        </div>
-      </div><center>
+        <><center>
           <main className={styles.About}>
             <h1 className={styles.title} data-aos="fade-up">
               About Me!

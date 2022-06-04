@@ -5,6 +5,7 @@ import Header from "../Components/Header";
 import About from "../Components/About";
 import Position from "../Components/Position";
 import Projects from "../Components/Projects";
+import Testing from "../Components/Testing";
 import Footer from "../Components/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -41,7 +42,7 @@ export default function Home() {
       </Head>
       <main className={styles.main} id="mains">
         <Header />
-        <About />
+        <About />        
         <img
           src="images/emote2.png"
           loading="lazy"
@@ -59,6 +60,7 @@ export default function Home() {
           loading="lazy"
           data-aos="fade-down"
           className={emotes.emote} />
+        <Testing />
       </main>
     </div><Footer />
     </React.Fragment>

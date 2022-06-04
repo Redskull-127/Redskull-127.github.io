@@ -1,4 +1,43 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+@font-face {
+    font-family: 'Kanit', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+}
+
+
+
 .Footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    background-color: rgba(250, 235, 215, 0.151);
+}
+
+.Footer h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: antiquewhite;
+}
+
+.imgs{
+    margin-bottom: 20px;
+}
+
+.imgs img{
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+
+
+/* .Footer{
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
@@ -22,4 +61,4 @@
 
 .media img{
     height: 50px;
-}
+} */

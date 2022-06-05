@@ -16,14 +16,36 @@ class Footer extends Component {
   }
   render() {
     return (
-      <div className={styles.Footer}>
-        <h1>Connect with me...</h1>
-        <div className={styles.imgs}>
-          <img loading="lazy" onClick={this.gmail} src="https://img.icons8.com/color/48/undefined/gmail-new.png" />
-          <img loading="lazy" onClick={this.linkedin} src="https://img.icons8.com/color/48/undefined/linkedin-circled--v1.png" />
-          <img loading="lazy" onClick={this.instagram} src="https://img.icons8.com/fluency/48/undefined/instagram-new.png" />
+      <>
+        <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
+        <div className={styles.Footer}>
+          <h1>Connect with me...</h1>
+          <div className={styles.imgs}>
+            <img
+              loading="lazy"
+              onClick={this.gmail}
+              src="https://img.icons8.com/color/48/undefined/gmail-new.png"
+            />
+            <img
+              loading="lazy"
+              onClick={this.linkedin}
+              src="https://img.icons8.com/color/48/undefined/linkedin-circled--v1.png"
+            />
+            <img
+              loading="lazy"
+              onClick={this.instagram}
+              src="https://img.icons8.com/fluency/48/undefined/instagram-new.png"
+            />
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }

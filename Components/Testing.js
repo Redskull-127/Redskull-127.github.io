@@ -13,8 +13,8 @@ const Testing = () => {
   const [data, setData] = useState("");
   useEffect(() => {
     const firebaseConfig = {
-      apiKey: "AIzaSyDeywR4_4KQSKDXz2rbDe6u_NVfpRaswTI",
-      authDomain: "redskull-me.firebaseapp.com",
+      apiKey: process.env.REACT_APP_FIREBASEAPI,
+      authDomain: process.env.REACT_APP_FIREBASEAUTH,
       projectId: "redskull-me",
       storageBucket: "redskull-me.appspot.com",
       messagingSenderId: "665630490828",

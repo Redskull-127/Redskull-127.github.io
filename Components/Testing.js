@@ -10,7 +10,7 @@ import react, { useEffect, useState } from "react";
 
 const Testing = () => {
   // console.log(process.env)
-  const [data, setData] = useState("nope");
+  const [data, setData] = useState("");
   useEffect(() => {
     const firebaseConfig = {
       apiKey: "AIzaSyDeywR4_4KQSKDXz2rbDe6u_NVfpRaswTI",
@@ -44,7 +44,7 @@ const Testing = () => {
   }, []);
   return (
     <div className={styles.testing}>
-      <h1 id="testing">Testing</h1>
+      <h1 id="testing">Loading</h1>
       <h1 id="toolip">{data}</h1>
     </div>
   );

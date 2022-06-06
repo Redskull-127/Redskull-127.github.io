@@ -115,6 +115,11 @@
   z-index: 100;
 }
 
+.emote4{
+  height: 180px;
+  margin: 150px 0px 150px 0px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

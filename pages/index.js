@@ -11,6 +11,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect, useState, Component } from "react";
 import { CustomCursor } from "react-svg-cursor";
+import Quote from "../Components/Quote";
 
 export default function Home() {
   const [device, setDevice] = useState(false);
@@ -59,10 +60,12 @@ export default function Home() {
           src="images/emote4.png"
           loading="lazy"
           data-aos="fade-down"
-          className={emotes.emote} />
+          className={`${styles.emote4}`} />
+        <Quote />
         <Testing />
       </main>
-    </div><Footer />
+    </div>
+    <Footer />
     </React.Fragment>
   );
 }

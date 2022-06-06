@@ -1,0 +1,19 @@
+.quote h1{
+    color: antiquewhite;
+    font-size: 1.5em;
+}
+
+.quote span{
+    color: antiquewhite;
+}
+
+.quote {
+    background-color: rgba(250, 235, 215, 0.151);
+    border-radius: 7px;
+    display: block;
+    text-align: center;
+    width: 85%;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    padding: 20px 0px 20px 0px;
+}

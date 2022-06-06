@@ -1,6 +1,7 @@
 import styles from "../styles/Testing.module.css";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getPerformance } from "firebase/performance";
 import {
   getRemoteConfig,
   getValue,
@@ -25,6 +26,7 @@ const Testing = () => {
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
+    const perf = getPerformance(app);
     const remoteConfig = getRemoteConfig(app);
     remoteConfig.settings.minimumFetchIntervalMillis = 10000;
     remoteConfig.defaultConfig = {

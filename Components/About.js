@@ -37,7 +37,7 @@ class About extends Component {
               <div className={styles.tech} data-aos="fade-up">
                 <img
                   loading="lazy"
-                  data-aos="fade-right"
+                  data-aos="fade-down"
                   src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-html-web-development-flaticons-lineal-color-flat-icons.png" />
                 <img
                   loading="lazy"
@@ -65,7 +65,7 @@ class About extends Component {
                   src="https://img.icons8.com/office/40/000000/react.png" />
                 <img
                   loading="lazy"
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                   src="https://img.icons8.com/fluency/48/000000/python.png" />
               </div>
             </div>

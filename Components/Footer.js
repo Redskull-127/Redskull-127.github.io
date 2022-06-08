@@ -6,7 +6,7 @@ import Head from "next/head";
 
 class Footer extends Component {
   gmail() {
-    window.open("mailto:redskull@duck.com");
+    window.open("mailto:admin@meertarbani.dev");
   }
   instagram() {
     window.open("https://instagram.com/127.0.0.1.exe");

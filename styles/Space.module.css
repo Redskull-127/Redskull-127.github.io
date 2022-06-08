@@ -1,0 +1,14 @@
+.Space{
+    width: 85%;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 0.151);
+    border-radius: 7px;
+}
+
+.Space h1{
+    font-size: 1.5em;
+    color: antiquewhite;
+}

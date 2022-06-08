@@ -2,13 +2,14 @@ import styles from "../styles/Space.module.css";
 import React, { useState, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import  Head  from "next/Head";
 export default function Space() {
     const [names, setNames] = useState("Waiting for data...");
     const [crafts, setCrafts] = useState("Waiting for data...");
     // const [random, setRandom] = useState("Waiting for data...");
   useEffect(() => {
-    datas();
+          datas();
+      
   }, []);
   const Api = "http://api.open-notify.org/astros.json";
   function datas() {

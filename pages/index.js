@@ -12,7 +12,6 @@ import "aos/dist/aos.css";
 import React, { useEffect, useState, Component } from "react";
 import { CustomCursor } from "react-svg-cursor";
 import Quote from "../Components/Quote";
-import Space from "../Components/Space";
 
 export default function Home() {
   const [device, setDevice] = useState(false);

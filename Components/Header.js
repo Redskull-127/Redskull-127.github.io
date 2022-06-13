@@ -1,5 +1,5 @@
 import styles from "../styles/Header.module.css";
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ReactDOM from "react-dom";
@@ -8,8 +8,9 @@ import Draggable, { DraggableCore } from "react-draggable";
 class Header extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.onScroll);
-  }
 
+  }
+  
   componentWillUnmount() {
     window.removeEventListener("scroll", this.onScroll);
   }
@@ -18,6 +19,9 @@ class Header extends Component {
     conh.style.display = "none";
   };
   render() {
+    const imgUrls = ["/dance/dance.gif", "/dance/dance2.gif", "/dance/dance3.gif"];
+    const imgval = (Math.floor(Math.random() * imgUrls.length));
+    const imgSrc = "/dance/dance.gif"
     return (
       <>
         <center>
@@ -35,7 +39,7 @@ class Header extends Component {
             >
               <div className="handle">
                 <img
-                  src="/images/bitmojidance.gif"
+                  src={imgUrls[imgval]}
                   className={styles.Bitmoji}
                   loading="lazy"
                   data-bs-toggle="tooltip"

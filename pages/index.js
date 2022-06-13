@@ -15,6 +15,7 @@ import Quote from "../Components/Quote";
 
 export default function Home() {
   const [device, setDevice] = useState(false);
+  // const [scale, setScale] = useState(1);
   useEffect(() => {
     Aos.init({ duration: 2000 });
     var userAgent = navigator.userAgent.toLowerCase();
@@ -74,7 +75,16 @@ export default function Home() {
           <Testing />
         </main>
       </div>
-      <Footer />
+      <div
+        onMouseEnter={(e) => {
+          setDevice(true);
+        }}
+        onMouseLeave={(e) => {
+          setDevice(false);
+        }}
+      >
+        <Footer />
+      </div>
     </React.Fragment>
   );
 }

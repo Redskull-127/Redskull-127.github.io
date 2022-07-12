@@ -1,16 +1,43 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 import styles from "../styles/Header.module.css";
 import React, { Component, useState, useEffect } from "react";
-import Aos from "aos";
 import "aos/dist/aos.css";
-import ReactDOM from "react-dom";
 import Draggable, { DraggableCore } from "react-draggable";
+import firebase from "../Firebase/firebaseConf";
+import {
+  getRemoteConfig,
+  getValue,
+  fetchAndActivate,
+} from "firebase/remote-config";
 
 class Header extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      musicLink: ''
+    };
+  }
+
   componentDidMount() {
     window.addEventListener("scroll", this.onScroll);
-
+    const remoteConfig = getRemoteConfig(firebase);
+    remoteConfig.settings.minimumFetchIntervalMillis = 10000;
+    remoteConfig.defaultConfig = {
+      musicLink: "",
+    };
+    fetchAndActivate(remoteConfig)
+      .then(() => {
+        const musicval = getValue(remoteConfig, "musicLink").asString();
+        console.log(musicval);
+        this.setState({ musicLink: musicval });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
-  
+
   componentWillUnmount() {
     window.removeEventListener("scroll", this.onScroll);
   }
@@ -19,9 +46,36 @@ class Header extends Component {
     conh.style.display = "none";
   };
   render() {
-    const imgUrls = ["/dance/dance.gif", "/dance/dance2.gif", "/dance/dance3.gif"];
-    const imgval = (Math.floor(Math.random() * imgUrls.length));
-    const imgSrc = "/dance/dance.gif"
+    let isPlaying = 1;
+    const audioLink =
+      typeof Audio !== "undefined" &&
+      new Audio(
+        this.state.musicLink
+      );
+    const Play = () => {
+      if (typeof Audio != "undefined") {
+        audioLink.play();
+        isPlaying = 0;
+      }
+    };
+    const Stop = () => {
+      audioLink.pause();
+      isPlaying = 1;
+    };
+    const Playing = () => {
+      if (isPlaying == 1) {
+        Play();
+      } else {
+        Stop();
+      }
+    };
+    const imgUrls = [
+      "/dance/dance.gif",
+      "/dance/dance2.gif",
+      "/dance/dance3.gif",
+    ];
+    const imgval = Math.floor(Math.random() * imgUrls.length);
+    const imgSrc = "/dance/dance.gif";
     return (
       <>
         <center>
@@ -45,6 +99,9 @@ class Header extends Component {
                   data-bs-toggle="tooltip"
                   data-bs-placement="top"
                   title="Drag This Emote!"
+                  onClick={(e) => {
+                    Playing();
+                  }}
                 />
               </div>
             </Draggable>

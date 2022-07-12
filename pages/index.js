@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import emotes from "../styles/Emote.module.css";
@@ -12,8 +14,10 @@ import "aos/dist/aos.css";
 import React, { useEffect, useState, Component } from "react";
 import { CustomCursor } from "react-svg-cursor";
 import Quote from "../Components/Quote";
+import { initializeApp } from "firebase/app";
 
 export default function Home() {
+
   const [device, setDevice] = useState(false);
   // const [scale, setScale] = useState(1);
   useEffect(() => {

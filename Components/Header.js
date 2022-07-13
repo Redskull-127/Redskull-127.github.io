@@ -12,11 +12,11 @@ import {
 } from "firebase/remote-config";
 
 class Header extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      musicLink: ''
+      musicLink: "",
+      napsterLink: "",
     };
   }
 
@@ -36,22 +36,30 @@ class Header extends Component {
       .catch((err) => {
         console.log(err);
       });
+    this.napSter()
   }
 
   componentWillUnmount() {
     window.removeEventListener("scroll", this.onScroll);
   }
+
   onScroll = () => {
     const conh = document.getElementById("con");
     conh.style.display = "none";
   };
+
+  napSter = () => {
+    fetch(process.env.REACT_APP_NEPSTER)
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ napsterLink: data.tracks[Math.floor(Math.random() * data.tracks.length)].previewURL });
+      });
+  };
+
   render() {
     let isPlaying = 1;
     const audioLink =
-      typeof Audio !== "undefined" &&
-      new Audio(
-        this.state.musicLink
-      );
+      typeof Audio !== "undefined" && new Audio(this.state.napsterLink);
     const Play = () => {
       if (typeof Audio != "undefined") {
         audioLink.play();

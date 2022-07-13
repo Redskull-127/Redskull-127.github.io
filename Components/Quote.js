@@ -10,7 +10,6 @@ export default function Quote() {
     fetchquote();
     if (process.env.REACT_APP_API_URL != undefined) {
       setApi(process.env.REACT_APP_API_URL);
-      console.log(Api);
     }
   }, []);
   const [Api, setApi] = useState([]);

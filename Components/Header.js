@@ -59,7 +59,7 @@ class Header extends Component {
   render() {
     let isPlaying = 1;
     const audioLink =
-      typeof Audio !== "undefined" && new Audio(this.state.napsterLink);
+      typeof Audio !== "undefined" && new Audio((this.state.napsterLink).slice(7));
     const Play = () => {
       if (typeof Audio != "undefined") {
         audioLink.play();

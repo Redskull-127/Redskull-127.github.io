@@ -13,6 +13,14 @@ function MyApp({ Component, pageProps }) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossOrigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"></link>
     </Head>
+    <Script>
+      var Tynt=Tynt||[];Tynt.push('aR694qa3yr7BKorkHcnnVW');
+      (function(){var h,s=document.createElement('script');
+      s.src='https://cdn.tynt.com/ti.js';
+      h=document.getElementsByTagName('script')[0];
+      h.parentNode.insertBefore(s,h);})();
+    </Script>
+
     <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossOrigin="anonymous"></Script>
   <Component {...pageProps} />
   </>

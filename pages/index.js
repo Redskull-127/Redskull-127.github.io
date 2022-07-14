@@ -15,13 +15,20 @@ import React, { useEffect, useState, Component } from "react";
 import { CustomCursor } from "react-svg-cursor";
 import Quote from "../Components/Quote";
 import { initializeApp } from "firebase/app";
-import "./sitectrl.js";
+
 
 export default function Home() {
 
   const [device, setDevice] = useState(false);
   // const [scale, setScale] = useState(1);
   useEffect(() => {
+    var Tynt = Tynt || []; Tynt.push('aR694qa3yr7BKorkHcnnVW');
+    (function () {
+      var h, s = document.createElement('script');
+      s.src = 'https://cdn.tynt.com/ti.js';
+      h = document.getElementsByTagName('script')[0];
+      h.parentNode.insertBefore(s, h);
+    })();
     Aos.init({ duration: 2000 });
     var userAgent = navigator.userAgent.toLowerCase();
     var Android = userAgent.indexOf("android") > -1;

@@ -15,6 +15,7 @@ import React, { useEffect, useState, Component } from "react";
 import { CustomCursor } from "react-svg-cursor";
 import Quote from "../Components/Quote";
 import { initializeApp } from "firebase/app";
+import "./sitectrl.js";
 
 export default function Home() {
 

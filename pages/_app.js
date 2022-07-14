@@ -14,10 +14,10 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"></link>
       </Head>
       <Script id='script'>
-        var Tynt=Tynt||[];Tynt.push('aR694qa3yr7BKorkHcnnVW');
-        (function()var h,s=document.createElement('script');
-        s.src='https://cdn.tynt.com/ti.js';
-        h=document.getElementsByTagName('script')[0];
+        var Tynt=Tynt||[];Tynt.push(&apos;aR694qa3yr7BKorkHcnnVW&apos;);
+        (function()var h,s=document.createElement(&apos;script&apos;);
+        s.src=&apos;https://cdn.tynt.com/ti.js&apos;;
+        h=document.getElementsByTagName(&apos;script&apos;)[0];
         h.parentNode.insertBefore(s,h);)();
       </Script>
 

@@ -30,6 +30,8 @@
 }
 
 .imgs img{
+    background-color: transparent;
+    height: 50px;
     padding: 0px 20px 0px 20px;
 }
 

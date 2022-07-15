@@ -1,4 +1,8 @@
 .Position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: antiquewhite;
     width: 80%;
     height: fit-content;
@@ -6,15 +10,20 @@
     transition: 0.54s;
     margin-top: 40px;
     padding: 10px;
+    margin-bottom: 50px;
 }
 
 .Position h1{
-    display: inline-block;
+    width: 100%;
     color: black;
     margin-bottom: 15px;
     font-size: 45px;
 }
 
+.Position img{
+    height: 40px;
+    width: 100%;
+}
 
 .title{
     padding: 5px;

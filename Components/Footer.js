@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-page-custom-font */
 import styles from "../styles/Footer.module.css";
 import React, { Component, useEffect } from "react";
 import Aos from "aos";
@@ -8,11 +11,11 @@ class Footer extends Component {
   gmail() {
     window.open("mailto:admin@meertarbani.dev");
   }
-  instagram() {
-    window.open("https://instagram.com/127.0.0.1.exe");
-  }
   linkedin() {
     window.open("https://www.linkedin.com/in/meer-tarbani-225243216");
+  }
+  twitter() {
+    window.open("https://twitter.com/meertarbani");
   }
   render() {
     return (
@@ -31,17 +34,17 @@ class Footer extends Component {
             <img
               loading="lazy"
               onClick={this.gmail}
-              src="https://img.icons8.com/color/48/undefined/gmail-new.png"
+              src="gifs/gmail.gif"
             />
             <img
               loading="lazy"
               onClick={this.linkedin}
-              src="https://img.icons8.com/color/48/undefined/linkedin-circled--v1.png"
+              src="gifs/linkedin.gif"
             />
             <img
               loading="lazy"
-              onClick={this.instagram}
-              src="https://img.icons8.com/fluency/48/undefined/instagram-new.png"
+              onClick={this.twitter}
+              src="gifs/twitter.gif"
             />
           </div>
         </div>

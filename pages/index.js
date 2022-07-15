@@ -32,7 +32,8 @@ export default function Home() {
     Aos.init({ duration: 2000 });
     var userAgent = navigator.userAgent.toLowerCase();
     var Android = userAgent.indexOf("android") > -1;
-    if (Android) {
+    var iOS = userAgent.indexOf("iphone") > -1;
+    if (Android || iOS) {
       setDevice(true);
     }
   }, []);

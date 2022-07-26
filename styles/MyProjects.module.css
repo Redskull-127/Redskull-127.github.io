@@ -1,0 +1,23 @@
+.Container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 70px;
+    padding: 20px;
+    margin: 20px;
+    width: 80%;
+}
+
+.NavBar h1{
+    color: antiquewhite;
+}

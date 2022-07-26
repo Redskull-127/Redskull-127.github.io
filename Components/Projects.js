@@ -1,22 +1,31 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../styles/Projects.module.css";
 import React, { Component, useEffect } from "react";
+import { useRouter } from 'next/router'
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-class Projects extends Component {
-  redskull() {
-    window.open("/projects");
+
+export default function Projects() {
+
+  const router = useRouter();
+
+  function redskull() {
+    router.push('/projects');
   }
-  binge() {
-    window.open("https://redskull.me/BINGE");
+
+  function binge() {
+    // window.open("https://meertarbani.dev/BINGE");
+    router.push('/BINGE')
   }
-  maginwol() {
-    window.open("https://github.com/Redskull-127/magicWOL");
+  function maginwol() {
+    // window.open("https://github.com/Redskull-127/magicWOL");
+    router.push('https://github.com/Redskull-127/magicWOL')
   }
-  passmanager() {
-    window.open("https://redskull.me/Manager")
+  function passmanager() {
+    // window.open("https://meertarbani.dev/Manager")
+    router.push('/Manager')
   }
-  render() {
     return (
       <center>
         <h1 className={styles.title} data-aos="fade-up">
@@ -39,7 +48,7 @@ class Projects extends Component {
               </p>
               <button
                 type="button"
-                onClick={this.binge}
+                onClick={binge}
                 className={`btn btn-warning ${styles.btn}`}
               >
                 DOWNLOAD
@@ -63,7 +72,7 @@ class Projects extends Component {
               </p>
               <button
                 type="button"
-                onClick={this.maginwol}
+                onClick={maginwol}
                 className={`btn btn-warning ${styles.btn}`}
               >
                 DOWNLOAD
@@ -86,7 +95,7 @@ class Projects extends Component {
               </p>
               <button
                 type="button"
-                onClick={this.passmanager}
+                onClick={passmanager}
                 className={`btn btn-warning ${styles.btn}`}
               >
                 VISIT
@@ -100,13 +109,11 @@ class Projects extends Component {
           <button
             type="button"
             className="btn btn-warning"
-            onClick={this.redskull}
+            onClick={redskull}
           >
             Here
           </button>
         </div>
       </center>
     );
-  }
 }
-export default Projects;

@@ -16,7 +16,6 @@ import { CustomCursor } from "react-svg-cursor";
 import Quote from "../Components/Quote";
 import { initializeApp } from "firebase/app";
 
-
 export default function Home() {
 
   const [device, setDevice] = useState(false);

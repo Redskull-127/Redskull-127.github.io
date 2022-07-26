@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "BINGE",
+        "description": "BINGE is a free app for watching Movies and Tv shows for Free! Code is Available on",
+        "imageLink": "https://github.com/Redskull-127/projects/blob/main/assets/images/binge.png?raw=true",
+        "Github": "https://github.com/redskull-127/BINGE_APP",
+        "Download": "/BINGE"
+    },
+    {
+        "id": 2,
+        "title": "Magic WOL",
+        "description": "Magic wakeup-on-lan app, helps you to wake your computer. Code is Available on",
+        "imageLink": "https://github.com/Redskull-127/projects/blob/main/assets/images/magic.png?raw=true",
+        "Github": "https://github.com/Redskull-127/magicWOL",
+        "Download": "https://github.com/Redskull-127/magicWOL"
+    },
+    {
+        "id": 3,
+        "title": "Pass Manager",
+        "description": "Pass Manager helps you to keep your passwords secure! Code is Available on",
+        "imageLink": "https://github.com/Redskull-127/projects/blob/main/assets/images/passmgr.png?raw=true",
+        "Github": "https://github.com/Redskull-127/Manager",
+        "Download": "/Manager"
+    }
+]

@@ -2,7 +2,7 @@ import styles from "../styles/MyProjects.module.css";
 import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import Cards from "../components/CardsBuild";
+import Cards from "../Components/CardsBuild";
 
 export default function MyProjects() {
   const router = useRouter();

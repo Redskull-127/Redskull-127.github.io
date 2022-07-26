@@ -3,14 +3,18 @@ import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Cards from "../components/Cards";
-import JSON from "../ProjectData.json"
+
 export default function MyProjects() {
   const router = useRouter();
+  const [jsonData, setJsonData] = useState([]);
   useEffect(() => {
-    fetch(JSON)
+    fetch(
+      "https://raw.githubusercontent.com/Redskull-127/Redskull-127.github.io/main/ProjectData.json"
+    )
       .then((res) => res.json())
       .then((data) => {
-        console.table(data);
+        console.log(data);
+        setJsonData(data);
       })
       .catch((err) => {
         console.log(err);
@@ -50,7 +54,14 @@ export default function MyProjects() {
           </button>
         </div>
         <div className={styles.Cards}>
-          <Cards Data={Dataa} />
+          {jsonData != null ? (
+            jsonData.map((data, id) => {
+              return <Cards Data={data} key={id} />;
+            })
+          ) : (
+            <div>Loading...</div>
+          )}
+          {/* <Cards Data={Dataa} /> */}
         </div>
       </div>
     </>

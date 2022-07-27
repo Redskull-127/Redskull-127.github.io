@@ -7,6 +7,7 @@ import Header from "../Components/Header";
 import About from "../Components/About";
 import Position from "../Components/Position";
 import Projects from "../Components/Projects";
+import CurrentPlaying from "../Components/CurrentPlaying";
 import Testing from "../Components/Testing";
 import Footer from "../Components/Footer";
 import Aos from "aos";
@@ -84,6 +85,7 @@ export default function Home() {
           />
           <Quote />
           {/* <Space /> */}
+          <CurrentPlaying />
           <Testing />
         </main>
       </div>

@@ -26,8 +26,6 @@ const Testing = () => {
         const testing = document.getElementById('testing');
         const val = getValue(remoteConfig, "testing").asString();
         const musicval = getValue(remoteConfig, "musicLink").asString();
-        console.log(val);
-        console.log(musicval);
         testing.innerHTML = val;
         setData(process.env.REACT_APP_FIREBASE_API_KEY);
         setMusic(musicval);

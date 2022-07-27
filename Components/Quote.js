@@ -38,7 +38,6 @@ export default function Quote() {
   } else {
     return (
       <div data-aos="fade-up" className={styles.quote}>
-        {console.log(Api)}
         {<h1>{title}</h1>}
         <br />
         {<h1>`{quote}`</h1>}

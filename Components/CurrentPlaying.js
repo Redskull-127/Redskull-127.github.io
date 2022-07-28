@@ -32,7 +32,7 @@ export default function CurrentPlaying() {
         fetch("https://api.spotify.com/v1/me/player/currently-playing", {
           headers: {
             Accept: "application/json",
-            Authorization: `Bearer ${spotifyAPI}`,
+            Authorization: `Bearer ${val}`,
             "Content-Type": "application/json"
           }
         })

@@ -30,7 +30,6 @@ class Header extends Component {
     fetchAndActivate(remoteConfig)
       .then(() => {
         const musicval = getValue(remoteConfig, "musicLink").asString();
-        console.log(musicval);
         this.setState({ musicLink: musicval });
       })
       .catch((err) => {

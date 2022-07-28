@@ -29,17 +29,10 @@ export default function CurrentPlaying() {
         const val = getValue(remoteConfig, "spotify").asString();
         setSpotifyAPI(val);
         
-        
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-
-
-      fetch("https://api.spotify.com/v1/me/player/currently-playing", {
+        fetch("https://api.spotify.com/v1/me/player/currently-playing", {
           headers: {
             Accept: "application/json",
-            Authorization: "Bearer BQDl0NpgXrMmOkXrbSfxKwQG_2oWaClgzfSU9Mw30LLzYTMukT0fa9Wwqe0SjaOSjBy1knTJc_sRQC4V-0D0_UcDYsWjO-KuCfO7UasX-DQka_1dZjFGrEDJJuSGEIeaDiK76SaD8g3aXk7KqY1hBquFsEigVEQovI73tn3xAFvqu9H-xH4UXHI_Ak8V_GQq4D0O",
+            Authorization: `Bearer ${spotifyAPI}`,
             "Content-Type": "application/json"
           }
         })
@@ -56,6 +49,14 @@ export default function CurrentPlaying() {
           .catch((err) => {
             console.log(err);
           });
+        
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+
+      
 
 
   }, []);

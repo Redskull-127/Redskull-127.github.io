@@ -72,9 +72,10 @@ export default function CurrentPlaying() {
         <div className={style.current}>
           <>{isPlaying ? <h1>Now Playing</h1> : <h1>Was Listening</h1>}</>
           <div className={style.details}>
+          <h1> {currentPlaying} -
             {currentArtist.map((artist, key) => (
-              <h1 key={key}>{currentPlaying} - {artist.name}</h1>
-            ))}
+              <>{artist.name}</>
+            ))}</h1>
             <img
               src={currentImage}
               title="Click To Play"

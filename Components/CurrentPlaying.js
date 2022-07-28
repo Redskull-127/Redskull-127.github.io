@@ -74,7 +74,7 @@ export default function CurrentPlaying() {
           <div className={style.details}>
           <h1> {currentPlaying} -
             {currentArtist.map((artist, key) => (
-              <>{artist.name} {" "}</>
+              <>{" "}{artist.name}{" "}</>
             ))}</h1>
             <img
               src={currentImage}

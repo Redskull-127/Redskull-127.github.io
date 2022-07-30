@@ -50,9 +50,9 @@ export default function Home() {
     openSVG.style.display = "none";
     closeSVG.style.display = "block";
     container.style.display = "flex";
-    container.style.left = "50%";
+    container.style.left = "65%";
     container.style.top = "50%";
-    container.style.transform = "translate(-50%, -65%)";
+    container.style.transform = "translate(50%, -65%)";
     container.style.zIndex = "11";
     headdiv.style.transition = "all 0.5s ease-in-out";
     headdiv.style.marginRight = "50%";

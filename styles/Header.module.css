@@ -45,6 +45,25 @@
   margin-left: -355px;
   animation: slidein 7s infinite;
 }
+
+.menuopen{
+  position: absolute;
+  background-color: antiquewhite;
+  right: 0;
+  top: 0;
+  margin: 30px;
+  height: 40px;
+  width: 60px;
+  border-radius: 10%;
+  transition: 0.7s;
+}
+
+.menuopen:hover{
+  background-color: black;
+  color: antiquewhite;
+  fill: antiquewhite;
+}
+
 @keyframes showup {
   0% {
     opacity: 0;
@@ -98,8 +117,54 @@
     width: 355px;
   }
 }
+
 .Bitmoji {
+  margin-right: 0;
   margin-top: 10vh;
   margin-bottom: 10vh;
   height: 35vh;
+  transition: 0.7s;
 }
+
+.container{
+  background-color: rgba(250, 235, 215, 0.151);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 0.7s;
+  border-radius: 14px;
+  padding: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.container h1{
+  font-size: 40px;
+  color: antiquewhite;
+  margin: 10px;
+  transition: 0.7s;
+  background-color: transparent;
+}
+
+/* fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* media query screen */
+/* @media (max-width: 600px) {
+  .container {
+    display: none;
+  }
+  .menuopen {
+    display: none;
+  }
+} */

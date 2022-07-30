@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 import styles from "../styles/About.module.css";
 import emotes from "../styles/Emote.module.css";
 import React, { Component, useEffect, useState } from "react";

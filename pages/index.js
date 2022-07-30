@@ -48,6 +48,8 @@ export default function Home() {
     const container = document.getElementById("container");
     const headdiv = document.getElementById("headdiv");
     openSVG.style.display = "none";
+    openSVG.style.transition = "all 0.5s ease-in-out";
+    closeSVG.style.transition = "all 0.5s ease-in-out";
     closeSVG.style.display = "block";
     container.style.display = "flex";
     container.style.left = "65%";
@@ -64,6 +66,8 @@ export default function Home() {
     const closeSVG = document.getElementById("closeSVG");
     const container = document.getElementById("container");
     const headdiv = document.getElementById("headdiv");
+    openSVG.style.transition = "all 0.5s ease-in-out";
+    closeSVG.style.transition = "all 0.5s ease-in-out";
     openSVG.style.display = "block";
     closeSVG.style.display = "none";
     container.style.display = "none";
